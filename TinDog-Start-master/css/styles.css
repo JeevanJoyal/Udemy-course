@@ -1,27 +1,65 @@
-#title{
-    background-color: #ff4c68;
+.nav-link{
     color: #fff;
-}
-
-body{
-    font-family: 'Montserrat';
-}
-.container-fluid{
-    padding: 3% 15%;
-}
-h1{
-    font-family: 'Montserrat';
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-h3{
     font-family: 'Montserrat';
     font-weight: 700;
 }
+a:hover{
+    color: #fff;
+}
+body{
+    font-family: 'Montserrat';
+    text-align: center;
+}
+#title{
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: left;
+}
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
 p{
     color: #8f8f8f;
 }
 
+/* sections colored or not */
+
+.colored-section{
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.not-colored-section{
+    background-color: #fff;
+}
+
+/* Heading */
+.big-heading{  /*h1*/
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.section-heading,.price-text,.testimonial-text{   /*h2*/
+    font-size: 3rem ; 
+    line-height: 1.5;
+}
+.cta-h3{
+    position: relative;
+    left: 12%;
+    width: 75%;
+    margin-top: 30px;
+    font-size: 70px;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    margin-top: 100px;
+}
+.feature-title{
+    font-size: 1.5rem;
+}
 /* nav bar */
 .navbar{
     padding: 0 0 4.5rem;
@@ -47,14 +85,19 @@ p{
  /* image */
 
 .title-image{
-    width: 60%;
+    width: 50%;
     transform: rotate(25deg);
+    position: absolute;
+    z-index: 1;
+    right: 15%;
 }
 
 
 /* features section */
 #features{
     padding: 7% 15%;
+    position: relative;
+    z-index: 2;
 }
 .feature-box{
     text-align: center;
@@ -66,4 +109,70 @@ p{
 .feature-icon:hover{
     color: #ff4638 ;
 
+}
+
+/* Testimonials section */
+
+#testimonials{
+    background-color: #ef8172;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+.testimonial-image{
+    width: 10%;
+    margin: 20px;
+    border-radius: 100%;
+}
+
+/* press section */
+
+#press{
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 15px;
+}
+
+/* Pricing section */
+
+#pricing{
+    padding: 100px;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+/* call to action */
+#cta{
+    padding: 15px;
+    font-size: 20px;
+    
+}
+
+
+/* footer */
+
+#footer{
+    margin: 5%;
+}
+.social-icons{
+    margin-bottom: 20px;
+}
+.icon{
+    margin: 0px 10px ;
+}
+
+@media (max-width: 1028px) {
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
 }
